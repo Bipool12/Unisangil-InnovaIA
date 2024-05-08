@@ -1,0 +1,965 @@
+/*globales*/
+html{
+    font-size: 62.5%;
+}
+
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+    background: #8e9eab;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+img{
+    max-width: 100%;
+}
+.contenedor {
+    
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+}
+.contenedor-index {
+    
+    margin-top: 0;
+    margin-right: 10rem;
+    margin-bottom: 0;
+    margin-left: 10rem;
+}
+
+.contenedor-parrafos{
+    margin-top: 0;
+    margin-right: 20rem;
+    margin-bottom: 0;
+    margin-left: 20rem;
+    text-align: justify;
+
+}
+
+
+.contenido-centrado{
+    max-width: 80rem;
+   
+}
+
+h1{
+    font-size: 5.8rem;
+    
+}
+
+h2{
+    font-size: 4.4rem;
+}
+h3{
+    font-size: 3rem;
+}
+h4{
+    font-size: 2.6rem;
+}
+
+/*utilidades*/
+.seccion{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+.centrar-texto{
+    text-align: center;
+}
+
+.fw-300{
+    font-weight: 500;
+}
+.fw-300 ul p{
+    font-weight: 500;
+}
+
+.d-block{
+    display: block!important;
+
+}
+
+
+/* Header*/
+.site-header{
+    background-image: url(../img/11.png);
+    
+    min-height: 45rem;
+    background-position: center;
+    background-size: cover;
+}
+.site-header.inicio {
+    background: url(../img/header.jpg);
+    height: 100vh; /* todo el ancho de la pantalla */
+    min-height: 60rem;
+    background-position: center;
+    background-size: cover;
+}
+
+.contenido-header{
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+   
+}
+.contenido-header h1{
+    
+    max-width: 80rem;
+    padding-bottom: 3rem;
+    line-height: 2;
+    padding-left: 0rem;
+    padding-top: 24rem;
+    font-size: 5rem;
+    /* diseño de fondo */
+    background-image: url(https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYmwyYjExYWx0a2szNDZkdjN4cDBhdHpvZ2d1enF1YmZscW03MG52OCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/hM4OekkycahSas09bD/giphy.gif);
+	background-size: cover;
+	color: transparent;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+	text-transform: uppercase;
+	
+}
+
+
+/* barra */
+.barra {
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e0e0e079; /* Hacemos que el contenedor sea inicialmente transparente */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.39); /* Agregamos una sombra para la profundidad */
+    padding-left: 90px; /* Añadimos un margen interno a la izquierda */
+    padding-right: 90px;
+    padding-bottom: 0;
+    padding-top: 7px;
+    
+    
+}
+
+
+
+
+
+
+.barra:hover {
+    background-color: #e0e0e0; /* Cambiamos el color de fondo para resaltar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Aumentamos la sombra para un efecto de elevación */
+
+}
+
+
+
+
+
+/* Estilo base para los enlaces */
+.navegacion a {
+    color: #000000;
+    text-decoration: none;
+    margin-right: 2rem;
+    font-size: 1.8rem;
+    transition: color 0.3s, font-size 0.3s; /* Transición suave para color y tamaño de fuente */
+}
+
+/* Elimina el margen derecho solo para el último elemento */
+.navegacion a:last-of-type {
+    margin-right: 0;
+}
+
+/* Estilo al pasar el mouse sobre los enlaces */
+.navegacion a:hover {
+    color: #110ec5; /* Cambia el color */
+    font-size: 2rem; /* Aumenta el tamaño de fuente */
+    font-weight: bold; /* Puedes agregar negrita u otras modificaciones */
+}
+
+
+/* Estilo base para los enlaces en la navegación del footer */
+.navegacion-footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 2rem;
+    font-size: 1.8rem;
+    transition: color 0.3s, font-size 0.3s; /* Transición suave para el color */
+}
+
+.navegacion a:last-of-type {
+    margin-right: 0;
+}
+/* Estilo al pasar el mouse sobre los enlaces en la navegación del footer */
+.navegacion-footer a:hover {
+    color: #CC9408; /* Cambia el color al pasar el mouse */
+    font-size: 2rem; /* Aumenta el tamaño de fuente */
+    font-weight: bold; 
+}
+
+
+
+/*mas sobre nosotros*/
+.encabezado2{
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+.iconos-nosotros{
+    display: flex;
+    justify-content: space-between;
+
+}
+.icono{
+    flex-basis: calc(33.3% - 1rem);
+    text-align: center;
+
+}
+
+.icono h3{
+    text-transform: uppercase;
+}
+/*casas y apartamentos en venta*/
+.contenedor-conferencias{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.anuncio{
+    /*grow -shrink -basi 
+     flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: calc(33.3% - 1rem);*/
+    flex: 0 0 calc(33.3% - 1rem);
+  
+    /*border-style: solid;
+    border-color: #b5b5b5;
+    border-width: .1rem ;
+    */
+    border: .1rem solid #b5b5b5;
+    background: #f5f5f5;
+    margin-bottom: 2rem;
+
+}
+.contenido-anuncio{
+    padding: 2rem;
+    text-align: justify;
+    
+
+}
+.contenido-anuncio h3, .contenido-anuncio p{
+    margin: 0;
+}
+.desarrolosostenible{
+    padding-bottom: 6.5rem;
+}
+.IA{
+    padding-bottom: 6.5rem;
+}
+.precio{
+    color: #71b100;
+    font-weight: 700;
+}
+.iconos-caracteristicas{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+.iconos-caracteristicas li{
+    display: flex;
+    
+}
+.iconos-caracteristicas li img{
+    margin-right: 2rem;
+}
+
+.boton{
+    color:#ffffff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    margin-top: 2rem;
+    display: inline-block;
+    text-align: center;
+    border:none;
+    cursor:pointer;
+
+
+    
+}
+
+.boton-amarillo{
+    background-color: #F1BE2C;
+}
+.boton-amarillo:hover {
+    background-color: #154E80; /* Cambia el color de fondo al pasar el mouse */
+    color: #ffffff; /* Cambia el color del texto al pasar el mouse */
+}
+
+
+.boton-verde{
+    background-color: #154E80;
+
+}
+.boton-verde:hover{
+    background-color:  #F1BE2C; /* Cambia el color de fondo al pasar el mouse */
+    color: #ffffff; /* Cambia el color del texto al pasar el mouse */
+}
+.ver-todas{
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*contacto*/
+.imagen-contacto{
+    background-image: url(../img/frenteunisangil.png);
+    background-position: center;
+    background-size: cover;
+    height: 40rem;
+    display: flex;
+    align-items: center;
+
+}
+.contenido-contacto{
+    flex: 1;
+    padding-top: 12rem;
+    
+   
+}
+.imagen-contacto h2,
+.imagen-contacto p{
+    flex: 1;
+    color: #000000;
+    text-shadow: 8px 8px 4px rgba(0, 0, 0, 0.404);
+    margin: 0 0 0 0;
+    
+        
+
+}
+.parrafo-contacto{
+    font-weight: bold;
+}
+
+.contenido-contacto p{
+    font-size:2rem;
+}
+/*seccion inferior */
+
+.seccion-inferior{
+    display: flex;
+    justify-content: space-between;
+
+}
+.seccion-inferior .ponentes{
+    flex-basis: 300rem ; 
+}
+
+.seccion-inferior .testimoniales{
+    flex-basis: 200rem;
+  
+}
+
+.entrada-ponentes{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    
+}
+.entrada-ponentes .imagen-entrada{
+    flex-basis: 40%;
+
+} 
+.entrada-ponentes .texto-entrada{
+    flex-basis: calc(60% - 3rem);
+}
+
+.texto-entrada h4{
+    margin: 0;
+    line-height: 1.4;
+}
+.texto-entrada a{
+    color: #000000;
+    text-decoration: none;
+}
+
+/* pseudoelementos*/
+
+
+.texto-entrada h4::after{
+    
+    content: '';
+    display: block;
+    background-color: #71b100;
+    width: 15rem;
+    height: 1rem;
+    margin-top: 1rem;
+}
+
+.texto-entrada span{
+    color: #F1BE2C;
+}
+.testimonial{
+    
+    background-color: rgb(19, 88,143);
+    border-radius: 2rem;
+    font-size: 2.4rem;
+    padding: 2rem;
+    color: #ffffff;
+    margin-bottom: 5rem;
+    
+   
+}
+.testimonial p{
+    text-align: right;
+}
+.testimonial blockquote{
+    font-weight: 300;
+    padding-left: 5rem;
+    
+}
+.testimonial blockquote::before{
+    content: '';
+    background-image: url(../img/comilla.svg);
+    display: block;
+    width: 5rem;
+    height:  5rem;
+}
+
+/*footer*/
+.site-footer{
+    background-color: #001c38;
+}
+.contenido-footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+    align-items: center ;
+
+}
+.copyright{
+    color: #ffffff;
+
+}
+/*documento: nosotros*/
+
+.contenedor-nosotros{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contenedor-nosotros img{
+    margin: 0; /* Espacio a la izquierda y derecha */
+    margin-bottom: 2rem; /* Espacio inferior */
+    width: 100%; /* Ocupar todo el ancho disponible */
+    max-width: 20000px; 
+}
+
+.texto-nosotros h2{
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 0;
+    padding: 1rem 0 3rem 0;
+}
+
+/*documento: anuncio*/
+.imagen-anuncio{
+    background-image: url(../img/frenteunisangil.png);
+    background-position: center;
+    background-size: cover;
+    height: 50rem;
+    display: flex;
+    align-items: center;
+    width: 100%
+
+}
+.iconos-caracteristicas-anuncio{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content:space-between;
+    margin: 4rem 7rem 4rem 0;
+}
+
+.iconos-caracteristicas-anuncio li{
+    display: flex;
+    
+}
+.iconos-caracteristicas-anuncio li img{
+    margin-right: 2rem;
+}
+
+/*documento: ponentes*/
+
+.entrada-ponentes-uno{
+    display: flex;
+    justify-content:center;
+    margin-bottom: 2rem;
+}
+.entrada-ponentes-uno .imagen-entrada-ponentes{
+    flex-basis: 45%;
+    margin-right: 3rem;
+
+} 
+.entrada-ponentes-uno .texto-entrada-ponentes{
+    flex-basis: calc(38% - 3rem);
+}
+.texto-entrada-ponentes h4{
+    margin: 0;
+    line-height: 1.4;
+}
+
+.centrar-texto-ponentes{
+    margin-left: 62rem;
+    
+}
+
+.texto-entrada-ponentes a{
+    color: #000000;
+    text-decoration: none;
+}
+
+/* pseudoelementos*/
+
+
+.texto-entrada-ponentes h4::after{
+    
+    content: '';
+    display: block;
+    background-color: #71b100;
+    width: 15rem;
+    height: 1rem;
+    margin-top: 1rem;
+}
+
+.texto-entrada-ponentes span{
+    color: #F1BE2C;
+    
+    
+}
+/*documento: entrada_ponentes*/
+.imagen-ponentes{
+    
+    background-image: url(../img/destacada2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 50rem;
+    display: flex;
+    align-items: center;
+
+}
+.texto-nosotros span{
+    color: #F1BE2C;
+}
+.texto-span{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+
+}
+.texto-ponentes{
+    margin: 0 0 2rem 0;
+    
+}
+.contenedor-ponentes {
+    max-width: 80rem;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+}
+/*documento: contacto*/
+label{
+    display: block; /*para salto e linea los elementos */
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+legend{
+    font-size: 2rem;
+    color: #6d6161;
+}
+input:not([type="submit"]),textarea,select{
+    padding: 1rem;
+    display: block;
+    width: 97%;
+    background-color: #e1e1e1;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 1rem;
+
+
+}
+textarea{
+    height: 20rem;
+}
+
+select{
+    width: 100%;
+
+}
+.contacto p{
+    font-size: 1.4rem;
+    color: #4f4f4f;
+}
+ 
+.forma-radios{
+    display: flex;
+    justify-content: space-between;
+    max-width: 30rem;
+    align-items: center;
+}
+
+input[type="radio"]{
+    width: auto;
+    margin-bottom: 0;
+}
+/* objetivos para imágenes rotativas con superposición de texto */
+.image-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-wrapper {
+    position: relative;
+    width: 450px;
+    height: 350px;
+    perspective: 1000px; /* Cambiado de 10000px a 1000px para un efecto más sutil */
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: justify;
+    padding: 2rem;
+    opacity: 0;
+    transition: opacity 0.5s, background-color 0.8s, transform 0.8s; /* Agregada transición para la rotación */
+    transform: rotateY(-180deg); /* Cambiado de 180deg a -180deg para que el overlay esté oculto inicialmente */
+    transform-origin: right; /* Cambiado de left a right para que la rotación se haga desde el lado opuesto */
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image-wrapper:hover img {
+    transform: rotateY(180deg);
+}
+
+.image-wrapper:hover .overlay {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.8);
+    transform: rotateY(0deg);
+}
+
+
+.overlay h3 {
+    margin: 0;
+    
+    
+}
+.overlay p, li{
+    margin: 0;
+    line-height: 1;
+    
+}
+
+
+/*Titulo azul con franja mostaza*/
+
+
+/* Estilo para el contenedor principal */
+.contenedor-azul-amarillo {
+    position: relative; /* Posición relativa para alinear los elementos hijos */
+    width: 0; /* Empieza con ancho 0 para la animación */
+    background-color: #082E63; /* Color de fondo del contenedor */
+    padding: 3rem; /* Agrega relleno interno al contenedor */
+    animation: aparecerCuadro 2s forwards; /* Animación para hacer aparecer el cuadro */
+    margin-top: 4rem;
+}
+
+/* Animación para expandir el contenedor */
+@keyframes aparecerCuadro {
+    from {
+        width: 0; /* Empieza con ancho 0 */
+    }
+    to {
+        width: 300px; /* Ancho final del cuadro */
+    }
+}
+
+/* Estilo para el título dentro del contenedor */
+.tituloAnimado {
+    margin: 0;
+    position: absolute; /* Posición absoluta para alinear con respecto al contenedor */
+    top: 10%; /* Posiciona el título en el 40% de la altura del contenedor */
+    left: -200px; /* Empieza fuera del área visible */
+    font-size: 25px; /* Tamaño del texto del título */
+    color: white; /* Color del texto */
+    animation: aparecerDesdeIzquierda 2s forwards; /* Animación para el título */
+    
+
+}
+
+/* Animación para mover el título desde la izquierda */
+@keyframes aparecerDesdeIzquierda {
+    from {
+        left: -200px; /* Empieza fuera del área visible */
+    }
+    to {
+        left: 50px; /* Mueve hacia la derecha */
+    }
+}
+
+/* Estilo para la línea dentro del contenedor */
+.linea {
+    width: 360px;
+    height: 7px; /* Altura de la línea */
+    background-color: #CC9408; /* Color mostaza */
+    animation: aparecerLinea 2s forwards; /* Animación para la línea */
+    margin-bottom: 4rem;
+
+}
+
+/* Animación para expandir la línea */
+@keyframes aparecerLinea {
+    from {
+        width: 0; /* Empieza con ancho 0 */
+    }
+    to {
+        width: 360px; /* Ancho igual al del contenedor más los padding */
+    }
+}
+
+
+/* Estilo para PONENTES*/
+
+.conferencistas-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px; /* Ajusta el ancho máximo según tu preferencia */
+    margin: 0 auto;
+}
+
+.conferencista {
+    width: calc(50% - 40px); /* Cambiado a 50% para mostrar dos conferencistas por fila */
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+@media only screen and (max-width: 768px) {
+    .conferencistas-container {
+        flex-direction: column;
+    }
+    
+    .conferencista {
+        width: calc(100% - 40px);
+        margin-bottom: 20px;
+    }
+}
+
+.conferencista:hover {
+    transform: translateY(-5px);
+}
+
+.conferencista img {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #007bff;
+    
+
+}
+.conferencista img:hover{
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    box-shadow: 0px 0px 15px 15px #ec731e;
+    -webkit-box-shadow: 0px 0px 15px 15px #ec731e;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+
+.conferencista-info {
+    text-align: center;
+}
+
+.conferencista-info i {
+    margin-right: 5px;
+}
+
+.conferencista h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #F1BE2C;
+}
+
+.conferencista p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Estiliza los iconos de las banderas si es necesario */
+.flag-icon {
+    font-size: 18px;
+}
+
+/*Descripccion de Conferencias*/
+.contenedor-descripccion{
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 2rem;
+
+}
+
+
+.contenedor-descripccion .imagen-entrada-descripccion {
+    flex-basis: 50%;
+    margin-right: 3rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    border-radius: 8px; /* Bordes redondeados para un efecto más suave */
+    transition: transform 0.3s ease; /* Transición suave */
+}
+
+/* Efecto de elevación al pasar el ratón */
+.contenedor-descripccion .imagen-entrada-descripccion:hover {
+    transform: translateY(-4px); /* Mueve la imagen hacia arriba */
+    box-shadow: 0 6px 12px #ff0000; /* Sombra más pronunciada */
+}
+
+.contenedor-descripccion .texto-entrada-descripccion{
+    flex-basis: calc(50% - 3rem);
+}
+.texto-entrada-descripccion h4{
+    margin: 0;
+    line-height: 1.4;
+}
+.texto-entrada-descripccion p{
+    text-align: justify;
+}
+
+.centrar-texto-descripccion{
+    margin-left: 62rem;
+    
+}
+
+
+
+
+/* pseudoelementos*/
+
+
+.texto-entrada-descripccion h4::after{
+    
+    content: '';
+    display: block;
+    background-color: #71b100;
+    width: 15rem;
+    height: 1rem;
+    margin-top: 1rem;
+    
+}
+.texto-entrada-descripccion span{
+    color: #CC9408;
+    font-weight: bold; /* Para negrita */
+        
+}
+
+
+
+/* Estilo para la sección de información de contacto */
+#info-contacto {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center; /* Centrar el contenido */
+  }
+  
+  /* Estilo para el título "CONTACTO" */
+  #info-contacto h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilo para la línea horizontal */
+  #info-contacto hr {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo para los párrafos de información de contacto */
+  #info-contacto p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilo para el enlace de correo electrónico */
+  #info-contacto a {
+    color: rgb(255, 0, 140); /* Cambio de color predeterminado */
+    text-decoration: none;
+  }
+  
+  /* Cambio de color al pasar el ratón sobre el enlace de correo */
+  #info-contacto a:hover {
+    color: #007bff;
+  }
+  
+  /* Estilo para los párrafos de información del equipo organizador */
+  #info-contacto p:last-child {
+    font-style: arial;
+    font-weight: bold; /* Texto "Equipo organizador:" en negrita */
+    color: #666; /* Color de texto gris */
+  }
+  
+  /*Estilos para inscripcciones*/
+  .container {
+    
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(17, 0, 255, 0.37);
+}
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #2E8B57;
+}
+.note {
+    font-style: italic;
+    text-align: left;
+}
