@@ -1086,7 +1086,12 @@ th {
     .testimoniales blockquote{
         font-size: 1rem;
     }
-    
+    .contenido-contacto{
+        
+        padding-top: 6.5rem;
+        
+       
+    }
 
     /* Agregar más reglas según sea necesario para ajustar otros elementos */
 }
