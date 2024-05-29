@@ -3,14 +3,33 @@ html{
     font-size: 62.5%;
 }
 
+.tituloAno {
+    font-size: 8rem; /* Ajusta el tamaño según tus necesidades */
+    padding-left: 4rem;
+}
+.logo {
+    width: 110px;
+    height: 110px;
+    transition: transform 0.3s ease; /* Animación de transición para transformaciones */
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Escala la imagen al pasar el mouse sobre ella */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0); /* Añade una sombra al pasar el mouse */
+}
+
+
 
 body {
+    overflow-x: hidden;
+
+    
     font-family: 'Lato', sans-serif;
     font-size: 1.6rem;
     line-height: 2;
     background: #8e9eab;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 img{
@@ -108,12 +127,13 @@ h4{
 }
 .contenido-header h1{
     
-    max-width: 80rem;
+    max-width: 90rem;
     padding-bottom: 3rem;
     line-height: 2;
+    
     padding-left: 0rem;
-    padding-top: 24rem;
-    font-size: 5rem;
+    padding-top: 20rem;
+    font-size: 5.2rem;
     /* diseño de fondo */
     background-image: url(https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYmwyYjExYWx0a2szNDZkdjN4cDBhdHpvZ2d1enF1YmZscW03MG52OCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/hM4OekkycahSas09bD/giphy.gif);
 	background-size: cover;
@@ -962,4 +982,89 @@ th {
 .note {
     font-style: italic;
     text-align: left;
+}
+/* Para dispositivos con un ancho máximo de 768px (como tablets y teléfonos) */
+@media only screen and (max-width: 768px) {
+    .site-header {
+        min-height: 30rem; /* Ajustar el tamaño del encabezado */
+    }
+
+    .contenido-header h1 {
+        font-size: 3rem; /* Reducir el tamaño del título principal */
+        padding-top: 26rem; /* Ajustar el espacio superior */
+    }
+
+    .barra {
+        padding-left: 20px; /* Reducir el relleno izquierdo de la barra de navegación */
+        padding-right: 20px; /* Reducir el relleno derecho de la barra de navegación */
+    }
+
+    .contenedor-index {
+        margin-right: 2rem; /* Reducir el margen derecho */
+        margin-left: 2rem; /* Reducir el margen izquierdo */
+    }
+
+    .contenedor-parrafos {
+        margin-right: 2rem; /* Reducir el margen derecho */
+        margin-left: 2rem; /* Reducir el margen izquierdo */
+    }
+
+    .centrado-texto {
+        text-align: center; /* Centrar el texto */
+    }
+
+    .conferencistas-container {
+        justify-content: center; /* Centrar los conferencistas */
+    }
+
+    .conferencista {
+        width: 100%; /* Hacer que cada conferencista ocupe todo el ancho */
+    }
+
+    .entrada-ponentes, .entrada-ponentes-uno {
+        flex-direction: column; /* Cambiar a diseño de columna */
+        align-items: center; /* Centrar elementos */
+    }
+
+    .entrada-ponentes .imagen-entrada, .entrada-ponentes-uno .imagen-entrada-ponentes {
+        margin-bottom: 2rem; /* Espacio inferior */
+    }
+
+    .texto-entrada h4::after,
+    .texto-entrada-ponentes h4::after,
+    .texto-entrada-descripccion h4::after {
+        width: 10rem; /* Reducir la longitud del pseudo-elemento */
+    }
+
+    .contenedor-descripccion,
+    .centrar-texto-descripccion {
+        margin-left: 2rem; /* Ajustar el margen izquierdo */
+    }
+
+    #info-contacto p:last-child {
+        text-align: center; /* Centrar el texto del equipo organizador */
+    }
+    p {
+        font-size: 1rem; /* Tamaño de fuente más pequeño */
+    }
+    li{
+        font-size: 1rem;
+
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    .overlay {
+        padding: 1rem;
+    }
+    
+    th, td {
+        font-size: 1rem;
+    }
+    .logo {
+        width: 90px;
+        height: 90px;
+    }
+    
+    /* Agregar más reglas según sea necesario para ajustar otros elementos */
 }
