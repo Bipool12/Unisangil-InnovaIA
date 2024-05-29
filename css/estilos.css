@@ -983,6 +983,9 @@ th {
     font-style: italic;
     text-align: left;
 }
+.texto-inolvidable {
+    font-size: 24px; /* Tamaño del texto por defecto */
+}
 /* Para dispositivos con un ancho máximo de 768px (como tablets y teléfonos) */
 @media only screen and (max-width: 768px) {
     .site-header {
@@ -1052,7 +1055,7 @@ th {
 
     }
     h3 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .overlay {
         padding: 1rem;
@@ -1062,8 +1065,8 @@ th {
         font-size: 1rem;
     }
     .logo {
-        width: 90px;
-        height: 90px;
+        width: 100px;
+        height: 80px;
     }
     
     body {
@@ -1071,12 +1074,19 @@ th {
 
     }
     .tituloAno {
-        font-size:6rem; /* Ajusta el tamaño según tus necesidades */
-        padding-left: 4rem;
+        font-size:4rem; /* Ajusta el tamaño según tus necesidades */
+        padding-left: 2rem;
+        white-space: pre-line;
+        padding: 0;
     }
-    texto-inolvidable{
-        font-size: 2rem;
+    .texto-inolvidable{
+        font-size: 20px;
+                
     }
+    .testimoniales blockquote{
+        font-size: 1rem;
+    }
+    
 
     /* Agregar más reglas según sea necesario para ajustar otros elementos */
 }
