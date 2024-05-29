@@ -1066,5 +1066,17 @@ th {
         height: 90px;
     }
     
+    body {
+        overflow-x: visible;
+
+    }
+    .tituloAno {
+        font-size:6rem; /* Ajusta el tamaño según tus necesidades */
+        padding-left: 4rem;
+    }
+    texto-inolvidable{
+        font-size: 2rem;
+    }
+
     /* Agregar más reglas según sea necesario para ajustar otros elementos */
 }
